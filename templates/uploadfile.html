@@ -1,0 +1,21 @@
+<html>
+<body>
+<br>
+<h1 style="color:black;"><b> Upload The Assignment Here </b></h1>
+<h3 style="color:brown;"><i> Student Name : {{ username }} </i></h3>
+<br>
+
+<form action = "/uploader" method = "POST" 
+enctype = "multipart/form-data">
+<input type = "file" name = "file" />
+<br>
+<br>
+<button type = "Submit"/>Upload</button>
+</form>
+
+<a href="/logout"> Logout </a>
+<br> 
+
+</body>
+</html>
+
