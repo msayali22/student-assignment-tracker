@@ -1,0 +1,8 @@
+print("Prime Numbers are:\n")
+for numbers in range(1,301):
+    if numbers>1:
+        for digit in range(2,numbers):
+            if numbers%digit==0:
+                break
+        else:
+            print(numbers)
