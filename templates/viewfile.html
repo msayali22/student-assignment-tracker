@@ -1,0 +1,29 @@
+
+<br>
+<br>
+<table border="1">
+    <tr>
+        <th>Assignment Title</th>
+        <th>Description</th>
+        <th>Due_date</th>
+        
+        
+    </tr>
+
+    {% for item in records %}
+    <tr>
+        <td>{{item[1]}}</td>
+        <td>{{item[2]}}</td>
+        <td>{{item[3]}}</td>
+        
+        
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<a href="/uploadfile">Upload Assignment</a>
+<br>
+
+</body>
+</html>

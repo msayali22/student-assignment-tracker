@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+
+<h2>Status Of Assignments</h2>
+<table border="1">
+	<tr>
+		<th>Submission ID</th>
+		<th>Assignment ID</th>
+		<th>User ID</th>
+		<th>Submission Date</th>
+		<th>Status</th>
+	</tr>
+	{% for item in records %}
+	<tr>
+		<td>{{item[0]}}</td>
+		<td>{{item[1]}}</td>
+		<td>{{item[2]}}</td>
+		<td>{{item[3]}}</td>
+		<td>{{item[5]}}</td>
+	</tr>
+    {% endfor %}
+</table>	
+<a href ="/approved_assignment"> students whose assignments are approved</a>
+<br>
+<br>
+<a href="/rejected_assignment"> students whose assignments are rejected</a>
+
+
+</body>
+</html>
